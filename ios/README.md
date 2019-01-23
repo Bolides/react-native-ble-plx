@@ -8,10 +8,23 @@ Because dependencies in iOS can be a mess the BleClient-Resolve manages this mes
 4. Static library of BleClient or dynamic Framework
 5. Swift 4.2 or earliar compliant build
 
-## Resolve dependencies
+## Resolve iOS dependencies
 
 ``` bash
+cd ..
+npm install
+cd ios
+popd Sources/BleClientManager
+
 # --use-submodules is optional, no build is needed because we do not use the carthage builds.
 carthage update --use-submodules --no-build
+popd
+```
+# Build BleClient iOS
+
+``` bash
+xcodebuild --scheme React -sdk iphonesimulator11.4 | xcpretty
+xcodebuild --scheme BleClient-resolved-iOS -sdk iphonesimulator11.4 | xcpretty
 ```
 
+You can repeat this for any SDK. Just make sure to build React first. (Only needed once per sdk)
