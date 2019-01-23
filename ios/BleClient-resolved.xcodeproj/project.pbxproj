@@ -27,6 +27,8 @@
 		FD63BF8E21F89AF100D09100 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF1E21F896EA00D09100 /* libReact.a */; };
 		FD63BF8F21F89AF100D09100 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF3221F896EA00D09100 /* libthird-party.a */; };
 		FD63BF9021F89AF100D09100 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF2221F896EA00D09100 /* libyoga.a */; };
+		FD63BFDA21F8A65500D09100 /* BleClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFD921F8A65500D09100 /* BleClient.framework */; };
+		FD63BFDB21F8A65500D09100 /* BleClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFD921F8A65500D09100 /* BleClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,6 +291,20 @@
 			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		FD63BFD821F8A65500D09100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD63BFC221F8A28900D09100;
+			remoteInfo = "BleClient-iOS";
+		};
+		FD63BFDC21F8A65500D09100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FD63BFC121F8A28900D09100;
+			remoteInfo = "BleClient-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -299,6 +315,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FD63BF6421F8984900D09100 /* RxSwift.framework in Embed Frameworks */,
+				FD63BFDB21F8A65500D09100 /* BleClient.framework in Embed Frameworks */,
 				FD63BF6B21F8987400D09100 /* BleClientManager.framework in Embed Frameworks */,
 				FD63BF7021F8994C00D09100 /* RxBluetoothKit.framework in Embed Frameworks */,
 			);
@@ -341,6 +358,7 @@
 				FD63BF9021F89AF100D09100 /* libyoga.a in Frameworks */,
 				FD63BF6321F8984900D09100 /* RxSwift.framework in Frameworks */,
 				FD63BF6F21F8994C00D09100 /* RxBluetoothKit.framework in Frameworks */,
+				FD63BFDA21F8A65500D09100 /* BleClient.framework in Frameworks */,
 				FD63BF6A21F8987400D09100 /* BleClientManager.framework in Frameworks */,
 				FD63BF6E21F8988100D09100 /* libBleClient.a in Frameworks */,
 			);
@@ -386,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				FD63BED121F8902600D09100 /* libBleClient.a */,
+				FD63BFD921F8A65500D09100 /* BleClient.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -514,6 +533,7 @@
 				FD63BF6621F8984900D09100 /* PBXTargetDependency */,
 				FD63BF7221F8994C00D09100 /* PBXTargetDependency */,
 				FD63BF6D21F8987400D09100 /* PBXTargetDependency */,
+				FD63BFDD21F8A65500D09100 /* PBXTargetDependency */,
 			);
 			name = "BleClient-resolved-iOS";
 			productName = "BleClient-resolved-iOS";
@@ -824,6 +844,13 @@
 			remoteRef = FD63BF3B21F896EA00D09100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FD63BFD921F8A65500D09100 /* BleClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BleClient.framework;
+			remoteRef = FD63BFD821F8A65500D09100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -891,6 +918,11 @@
 			isa = PBXTargetDependency;
 			name = React;
 			targetProxy = FD63BF7A21F89ACC00D09100 /* PBXContainerItemProxy */;
+		};
+		FD63BFDD21F8A65500D09100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BleClient-iOS";
+			targetProxy = FD63BFDC21F8A65500D09100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
