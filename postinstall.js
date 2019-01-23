@@ -21,14 +21,12 @@ if (process.platform === 'darwin' && shouldUseCarthage()) {
     )
   }
 
-  const bleClientManagerDirectory = __dirname + '/ios/BleClientManager'
+  const bleClientManagerDirectory = __dirname + '/ios/Sources/BleClientManager'
   try {
     process.chdir(bleClientManagerDirectory)
   } catch (err) {
     errorExitProcess(`${bleClientManagerDirectory} directory not found. Cannot proceed with building the library.`)
   }
-
-  spawnSyncProcessAndExitOnError('carthage', ['bootstrap', ...platformParams])
 
   const carthageVersionString = carthageVersionProcessResult.output[1].toString()
   spawnSyncProcessAndExitOnError('carthage', getCarthageBuildParams(carthageVersionString))
@@ -63,10 +61,12 @@ function getCarthageBuildParams(carthageVersionString) {
   const majorMinorPatch = carthageVersionString.split('.')
   const major = parseInt(majorMinorPatch[0])
   const minor = parseInt(majorMinorPatch[1])
-  const buildParams = ['build', '--no-skip-current', ...platformParams]
+  // carthage update --use-submodules --no-build
+  const buildParams = ['update', '--use-submodules', '--no-build']
   if (major > 0 || minor > 20) {
     // --cache-builds should be available (unless version 1.x.x will remove it)
-    buildParams.push('--cache-builds')
+    errorExitProcess('carthage is required to by more than version 1.20. Please update using `brew upgrade carthage`')
   }
+
   return buildParams
 }

@@ -21,6 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         os_log(.info, "💁🏻‍♂️ %@ with bleClient %@", "\(#function)", "\(bleClient)")
         
         // this is just an example, the Bleclient can be used for something but it is not used now.
+        do {
+            let url: URL = Bundle.main.url(forResource: "Info", withExtension: ".plist", subdirectory: nil)!
+            let data = try Data(contentsOf: url)
+            let plistDecoder = PropertyListDecoder()
+
+            let plist = try plistDecoder.decode(InfoPlist.self, from: data)
+            os_log(.info, "\n💁🏻‍♂️ %@\n %@💁🏻‍♂️", "\(#function)", "\(plist)")
+
+        } catch {
+            os_log(.error, "❌\n%@\n❌", "\(error)")
+        }
+      
+        
         
         return true
     }

@@ -41,5 +41,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>COM_BLECLIENT_CONFIGURATION_BUILD_DIR</key>
+	<string>$(CONFIGURATION_BUILD_DIR)</string>
+	<key>COM_BLECLIENT_HEADER_SEARCH_PATH</key>
+	<string>$(HEADER_SEARCH_PATHS)</string>
+	<key>COM_BLECLIENT_LIBRARY_SEARCH_PATHS</key>
+	<string>$(LIBRARY_SEARCH_PATHS)</string>
+	<key>COM_BLECLIENT_FRAMEWORK_SEARCH_PATHS</key>
+	<string>$(FRAMEWORK_SEARCH_PATHS)</string>
 </dict>
 </plist>

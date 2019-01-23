@@ -7,6 +7,7 @@ Because dependencies in iOS can be a mess the BleClient-Resolve manages this mes
 3. Unit tests for the respective targets
 4. Static library of BleClient or dynamic Framework
 5. Swift 4.2 or earliar compliant build
+6. Paralized builds are allowed
 
 ## Resolve iOS dependencies
 
@@ -23,8 +24,9 @@ popd
 # Build BleClient iOS
 
 ``` bash
-xcodebuild --scheme React -sdk iphonesimulator11.4 | xcpretty
 xcodebuild --scheme BleClient-resolved-iOS -sdk iphonesimulator11.4 | xcpretty
 ```
 
-You can repeat this for any SDK. Just make sure to build React first. (Only needed once per sdk)
+You can repeat this for any SDK.
+
+Build output can be found in derived data folder. If you open xcode and run the project folders are printed.
