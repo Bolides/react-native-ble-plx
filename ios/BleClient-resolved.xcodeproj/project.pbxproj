@@ -17,7 +17,6 @@
 		FD63BF6421F8984900D09100 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BEEA21F8925C00D09100 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD63BF6A21F8987400D09100 /* BleClientManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BED721F8903000D09100 /* BleClientManager.framework */; };
 		FD63BF6B21F8987400D09100 /* BleClientManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BED721F8903000D09100 /* BleClientManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FD63BF6E21F8988100D09100 /* libBleClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BED121F8902600D09100 /* libBleClient.a */; };
 		FD63BF6F21F8994C00D09100 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF0321F8926300D09100 /* RxBluetoothKit.framework */; };
 		FD63BF7021F8994C00D09100 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF0321F8926300D09100 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD63BF8A21F89AF100D09100 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF2621F896EA00D09100 /* libcxxreact.a */; };
@@ -27,8 +26,9 @@
 		FD63BF8E21F89AF100D09100 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF1E21F896EA00D09100 /* libReact.a */; };
 		FD63BF8F21F89AF100D09100 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF3221F896EA00D09100 /* libthird-party.a */; };
 		FD63BF9021F89AF100D09100 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF2221F896EA00D09100 /* libyoga.a */; };
-		FD63BFDA21F8A65500D09100 /* BleClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFD921F8A65500D09100 /* BleClient.framework */; };
-		FD63BFDB21F8A65500D09100 /* BleClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFD921F8A65500D09100 /* BleClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD63CAB021F8AE0E00D09100 /* BleClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63CAAD21F8ADA400D09100 /* BleClientSwift.framework */; };
+		FD63CAB121F8AE0E00D09100 /* BleClientSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD63CAAD21F8ADA400D09100 /* BleClientSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD63CAB621F8AE5600D09100 /* libBleClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BED121F8902600D09100 /* libBleClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,19 +291,33 @@
 			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		FD63BFD821F8A65500D09100 /* PBXContainerItemProxy */ = {
+		FD63CAAC21F8ADA400D09100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = FD63BFC221F8A28900D09100;
-			remoteInfo = "BleClient-iOS";
+			remoteGlobalIDString = FD63BFE321F8A76200D09100;
+			remoteInfo = "BleClientSwift-iOS";
 		};
-		FD63BFDC21F8A65500D09100 /* PBXContainerItemProxy */ = {
+		FD63CAAE21F8ADA400D09100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD63BFEB21F8A76200D09100;
+			remoteInfo = BleClientSwiftTests;
+		};
+		FD63CAB221F8AE0E00D09100 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = FD63BFC121F8A28900D09100;
-			remoteInfo = "BleClient-iOS";
+			remoteGlobalIDString = FD63BFE221F8A76200D09100;
+			remoteInfo = "BleClientSwift-iOS";
+		};
+		FD63CAB421F8AE4900D09100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD63BECC21F8902600D09100 /* BleClient.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D73F06E71D48E17B00AD5963;
+			remoteInfo = BleClient;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -315,9 +329,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FD63BF6421F8984900D09100 /* RxSwift.framework in Embed Frameworks */,
-				FD63BFDB21F8A65500D09100 /* BleClient.framework in Embed Frameworks */,
 				FD63BF6B21F8987400D09100 /* BleClientManager.framework in Embed Frameworks */,
 				FD63BF7021F8994C00D09100 /* RxBluetoothKit.framework in Embed Frameworks */,
+				FD63CAB121F8AE0E00D09100 /* BleClientSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,11 +370,11 @@
 				FD63BF8D21F89AF100D09100 /* libjsinspector.a in Frameworks */,
 				FD63BF8F21F89AF100D09100 /* libthird-party.a in Frameworks */,
 				FD63BF9021F89AF100D09100 /* libyoga.a in Frameworks */,
+				FD63CAB621F8AE5600D09100 /* libBleClient.a in Frameworks */,
+				FD63CAB021F8AE0E00D09100 /* BleClientSwift.framework in Frameworks */,
 				FD63BF6321F8984900D09100 /* RxSwift.framework in Frameworks */,
 				FD63BF6F21F8994C00D09100 /* RxBluetoothKit.framework in Frameworks */,
-				FD63BFDA21F8A65500D09100 /* BleClient.framework in Frameworks */,
 				FD63BF6A21F8987400D09100 /* BleClientManager.framework in Frameworks */,
-				FD63BF6E21F8988100D09100 /* libBleClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +418,8 @@
 			isa = PBXGroup;
 			children = (
 				FD63BED121F8902600D09100 /* libBleClient.a */,
-				FD63BFD921F8A65500D09100 /* BleClient.framework */,
+				FD63CAAD21F8ADA400D09100 /* BleClientSwift.framework */,
+				FD63CAAF21F8ADA400D09100 /* BleClientSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -478,7 +493,8 @@
 				FD63BF4C21F8980800D09100 /* LaunchScreen.storyboard */,
 				FD63BF4F21F8980800D09100 /* Info.plist */,
 			);
-			path = "BleClient-resolved-iOS";
+			name = "BleClient-resolved-iOS";
+			path = "../Sources/BleClient-resolved-iOS";
 			sourceTree = "<group>";
 		};
 		FD63BF5721F8980800D09100 /* BleClient-resolved-iOSTests */ = {
@@ -530,10 +546,11 @@
 			);
 			dependencies = (
 				FD63BF7B21F89ACC00D09100 /* PBXTargetDependency */,
+				FD63CAB521F8AE4900D09100 /* PBXTargetDependency */,
 				FD63BF6621F8984900D09100 /* PBXTargetDependency */,
 				FD63BF7221F8994C00D09100 /* PBXTargetDependency */,
 				FD63BF6D21F8987400D09100 /* PBXTargetDependency */,
-				FD63BFDD21F8A65500D09100 /* PBXTargetDependency */,
+				FD63CAB321F8AE0E00D09100 /* PBXTargetDependency */,
 			);
 			name = "BleClient-resolved-iOS";
 			productName = "BleClient-resolved-iOS";
@@ -844,11 +861,18 @@
 			remoteRef = FD63BF3B21F896EA00D09100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD63BFD921F8A65500D09100 /* BleClient.framework */ = {
+		FD63CAAD21F8ADA400D09100 /* BleClientSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = BleClient.framework;
-			remoteRef = FD63BFD821F8A65500D09100 /* PBXContainerItemProxy */;
+			path = BleClientSwift.framework;
+			remoteRef = FD63CAAC21F8ADA400D09100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD63CAAF21F8ADA400D09100 /* BleClientSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BleClientSwiftTests.xctest;
+			remoteRef = FD63CAAE21F8ADA400D09100 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -919,10 +943,15 @@
 			name = React;
 			targetProxy = FD63BF7A21F89ACC00D09100 /* PBXContainerItemProxy */;
 		};
-		FD63BFDD21F8A65500D09100 /* PBXTargetDependency */ = {
+		FD63CAB321F8AE0E00D09100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "BleClient-iOS";
-			targetProxy = FD63BFDC21F8A65500D09100 /* PBXContainerItemProxy */;
+			name = "BleClientSwift-iOS";
+			targetProxy = FD63CAB221F8AE0E00D09100 /* PBXContainerItemProxy */;
+		};
+		FD63CAB521F8AE4900D09100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BleClient;
+			targetProxy = FD63CAB421F8AE4900D09100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
