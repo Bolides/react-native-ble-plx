@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7970CE81D4F8E5D00231A1B /* BleClientManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7970CE41D4F8E5D00231A1B /* BleClientManager.framework */; };
-		D7970CE91D4F8E5D00231A1B /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7970CE51D4F8E5D00231A1B /* RxBluetoothKit.framework */; };
-		D7970CEA1D4F8E5D00231A1B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7970CE61D4F8E5D00231A1B /* RxSwift.framework */; };
-		D7D202791D4F614D00E10F6A /* BleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D202771D4F614D00E10F6A /* BleClient.m */; };
+		FD63BECB21F88FD700D09100 /* BleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FD63BEC921F88FD700D09100 /* BleClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +24,8 @@
 
 /* Begin PBXFileReference section */
 		D73F06E81D48E17B00AD5963 /* libBleClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBleClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7970CE41D4F8E5D00231A1B /* BleClientManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BleClientManager.framework; path = BleClientManager/Carthage/Build/iOS/BleClientManager.framework; sourceTree = "<group>"; };
-		D7970CE51D4F8E5D00231A1B /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = BleClientManager/Carthage/Build/iOS/RxBluetoothKit.framework; sourceTree = "<group>"; };
-		D7970CE61D4F8E5D00231A1B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = BleClientManager/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		D7D202771D4F614D00E10F6A /* BleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleClient.m; sourceTree = "<group>"; };
-		D7D202781D4F614D00E10F6A /* BleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleClient.h; sourceTree = "<group>"; };
+		FD63BEC921F88FD700D09100 /* BleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleClient.m; sourceTree = "<group>"; };
+		FD63BECA21F88FD700D09100 /* BleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7970CE81D4F8E5D00231A1B /* BleClientManager.framework in Frameworks */,
-				D7970CE91D4F8E5D00231A1B /* RxBluetoothKit.framework in Frameworks */,
-				D7970CEA1D4F8E5D00231A1B /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,11 +42,7 @@
 		D73F06DF1D48E17B00AD5963 = {
 			isa = PBXGroup;
 			children = (
-				D7970CE41D4F8E5D00231A1B /* BleClientManager.framework */,
-				D7970CE51D4F8E5D00231A1B /* RxBluetoothKit.framework */,
-				D7970CE61D4F8E5D00231A1B /* RxSwift.framework */,
-				D7D202771D4F614D00E10F6A /* BleClient.m */,
-				D7D202781D4F614D00E10F6A /* BleClient.h */,
+				FD63BEC821F88FD700D09100 /* BleClient */,
 				D73F06E91D48E17B00AD5963 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +53,16 @@
 				D73F06E81D48E17B00AD5963 /* libBleClient.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FD63BEC821F88FD700D09100 /* BleClient */ = {
+			isa = PBXGroup;
+			children = (
+				FD63BEC921F88FD700D09100 /* BleClient.m */,
+				FD63BECA21F88FD700D09100 /* BleClient.h */,
+			);
+			name = BleClient;
+			path = Sources/BleClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D202791D4F614D00E10F6A /* BleClient.m in Sources */,
+				FD63BECB21F88FD700D09100 /* BleClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +151,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -168,8 +166,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../iOS/Pods/Headers/Public/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../iOS/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../iOS/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -199,6 +204,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -207,8 +213,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../iOS/Pods/Headers/Public/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../iOS/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../iOS/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -218,11 +231,6 @@
 		D73F06F21D48E17B00AD5963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BleClientManager/Carthage/Build/iOS",
-				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -232,11 +240,6 @@
 		D73F06F31D48E17B00AD5963 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BleClientManager/Carthage/Build/iOS",
-				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
