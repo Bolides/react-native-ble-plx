@@ -56,17 +56,8 @@ function spawnSyncProcessAndExitOnError(command, params) {
   }
 }
 
-function getCarthageBuildParams(carthageVersionString) {
-  // check version of `carthage` to alter build params
-  const majorMinorPatch = carthageVersionString.split('.')
-  const major = parseInt(majorMinorPatch[0])
-  const minor = parseInt(majorMinorPatch[1])
+function getCarthageBuildParams() {
   // carthage update --use-submodules --no-build
   const buildParams = ['update', '--use-submodules', '--no-build']
-  if (major > 0 || minor > 20) {
-    // --cache-builds should be available (unless version 1.x.x will remove it)
-    errorExitProcess('carthage is required to by more than version 1.20. Please update using `brew upgrade carthage`')
-  }
-
   return buildParams
 }
