@@ -22,13 +22,27 @@ if (process.platform === 'darwin' && shouldUseCarthage()) {
   }
 
   const bleClientManagerDirectory = __dirname + '/ios/Sources/BleClientManager'
+  const bleClient = __dirname
+
+
   try {
     process.chdir(bleClientManagerDirectory)
   } catch (err) {
     errorExitProcess(`${bleClientManagerDirectory} directory not found. Cannot proceed with building the library.`)
   }
 
+  console.log(`🚀 carthage update in folder` + bleClientManagerDirectory)
+
   const carthageVersionString = carthageVersionProcessResult.output[1].toString()
+  spawnSyncProcessAndExitOnError('carthage', getCarthageBuildParams(carthageVersionString))
+
+  try {
+    process.chdir(bleClient)
+  } catch (err) {
+    errorExitProcess(`${bleClient} directory not found. Cannot proceed with building the library.`)
+  }
+
+  console.log(`🚀 carthage update in folder` + bleClient)
   spawnSyncProcessAndExitOnError('carthage', getCarthageBuildParams(carthageVersionString))
 
   process.exit(0)

@@ -29,8 +29,7 @@
     "flow-bin": "^0.63.0",
     "jest": "22.2.1",
     "prettier": "1.10.2",
-    "react": "16.2.0",
-    "react-native": "^0.57.8"
+    "react": "16.2.0"
   },
   "keywords": [
     "React",

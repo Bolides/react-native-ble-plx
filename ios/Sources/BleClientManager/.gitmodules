@@ -1,4 +1,4 @@
 [submodule "Carthage/Checkouts/RxSwift"]
-	url = https://github.com/ReactiveX/RxSwift.git
+	url = https://github.com/doozMen/RxSwift.git
 [submodule "Carthage/Checkouts/RxBluetoothKit"]
 	url = https://github.com/doozMen/RxBluetoothKit.git
