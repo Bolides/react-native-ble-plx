@@ -1,2 +1,2 @@
-github "ReactiveX/RxSwift" "4.4.0"
-github "doozMen/RxBluetoothKit" "4.0.3"
+github "doozMen/RxBluetoothKit" "5.1.5"
+github "doozMen/RxSwift" "4.5"
