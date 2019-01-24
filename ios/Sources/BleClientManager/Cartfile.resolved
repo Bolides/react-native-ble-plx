@@ -1,2 +1,2 @@
-github "Polidea/RxBluetoothKit" "4.0.3"
 github "ReactiveX/RxSwift" "4.4.0"
+github "doozMen/RxBluetoothKit" "4.0.3"
