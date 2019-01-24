@@ -34,9 +34,7 @@ What this library does NOT support:
 
 ## Recent Changes
 
-**0.9.1**
-
-* Update binary frameworks for XCode 9.4.
+Changes are now in the github releases tab.
 
 [All previous changes](CHANGELOG.md)
 
@@ -53,45 +51,37 @@ Contact us at [Gitter](https://gitter.im/RxBLELibraries/react-native-ble) if you
 If you do not have [Carthage](https://github.com/Carthage/Carthage) (ver. 0.21+) installed yet and
 wish to set up for iOS, please install it first and only then follow the steps given below
 
-### Automatically
+### Integrate after expo eject
+
+
+Add following to your Package.js
+
+`"react-native-ble-plx": "DoozMen/react-native-ble-plx"`
 
 ```bash
-npm install --save react-native-ble-plx
-react-native link react-native-ble-plx
+npm install
+expo eject
+cd ios
 ```
 
-Both on iOS and Android continue manually from step 7.
+Both on iOS and Android continue manually
 
 ### Manually
 
 #### iOS
 
 1. Add `react-native-ble-plx` to a project as a dependency in `package.json` file.
-   For example `"react-native-ble-plx": "Polidea/react-native-ble-plx"` will install
-   latest version from Polidea's Github repository.
+   For example `"react-native-ble-plx": "doozMen/react-native-ble-plx"` will install (if you need another version please fork and change DoozMen into you)
 2. Make sure that you have [Carthage](https://github.com/Carthage/Carthage) installed on your system.
 3. Execute `npm install` to fetch and install a library.
 4. Open iOS project located in `./ios` folder.
 5. Move `BleClient.xcodeproj` located in `.node_modules/react-native-ble-plx/ios`
    using drag & drop to `Libraries` folder in your project.
-6. In general settings of a target add `libBleClient.a` to Linked Frameworks and Libraries.
-7. In `Build Settings`/`Search Paths`/`Framework search paths` add path: `$(SRCROOT)/../node_modules/react-native-ble-plx/ios/BleClientManager/Carthage/Build/iOS`.
-8. In `Build Settings`/`Build Options`/`Always Embed Swift Standard Libraries` set to `Yes`.
-9. In `Build Phases` click on top left button and add `New Run Script Phase`.
 
-* Shell command: `/usr/local/bin/carthage copy-frameworks`
-* Input Files:
-  * `$(SRCROOT)/../node_modules/react-native-ble-plx/ios/BleClientManager/Carthage/Build/iOS/BleClientManager.framework`
-  * `$(SRCROOT)/../node_modules/react-native-ble-plx/ios/BleClientManager/Carthage/Build/iOS/RxSwift.framework`
-  * `$(SRCROOT)/../node_modules/react-native-ble-plx/ios/BleClientManager/Carthage/Build/iOS/RxBluetoothKit.framework`
-
-10. Minimal supported version of iOS is 8.0
-11. If you want to support background mode:
-    * In your application target go to `Capabilities` tab and enable `Uses Bluetooth LE Accessories` in
-      `Background Modes` section.
-    * Pass `restoreStateIdentifier` and `restoreStateFunction` to `BleManager` constructor.
 
 #### Android
+
+// TODO: This is under construction, instructions might not yet work, please add pr if you can.
 
 1. Add `react-native-ble-plx` to a project as a dependency in `package.json` file.
    For example `"react-native-ble-plx": "Polidea/react-native-ble-plx"` will install
