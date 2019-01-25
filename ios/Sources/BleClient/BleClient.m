@@ -7,13 +7,14 @@
 //
 
 #import "BleClient.h"
+
 @import BleClientManager;
 
-@interface BleModule () <BleClientManagerDelegate>
+@interface BleClient () <BleClientManagerDelegate>
 @property(nonatomic) BleClientManager* manager;
 @end
 
-@implementation BleModule
+@implementation BleClient
 
 @synthesize methodQueue = _methodQueue;
 

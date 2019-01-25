@@ -10,6 +10,7 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 
-@interface BleModule : RCTEventEmitter
+
+@interface BleClient : RCTEventEmitter
 
 @end
