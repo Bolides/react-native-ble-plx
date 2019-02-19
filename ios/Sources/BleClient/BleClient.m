@@ -6,9 +6,10 @@
 //  Copyright © 2016 Polidea. All rights reserved.
 //
 
+@import BleClientManager;
+
 #import "BleClient.h"
 
-@import BleClientManager;
 
 @interface BleClient () <BleClientManagerDelegate>
 @property(nonatomic) BleClientManager* manager;

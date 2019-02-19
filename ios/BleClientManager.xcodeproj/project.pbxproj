@@ -11,25 +11,14 @@
 		FD61D881221C5E5C00CC87F8 /* SafePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D878221C5E5C00CC87F8 /* SafePromise.swift */; };
 		FD61D882221C5E5C00CC87F8 /* BleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D879221C5E5C00CC87F8 /* BleUtils.swift */; };
 		FD61D883221C5E5C00CC87F8 /* BleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D87A221C5E5C00CC87F8 /* BleExtensions.swift */; };
-		FD61D884221C5E5C00CC87F8 /* BleClientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD61D87B221C5E5C00CC87F8 /* BleClientManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD61D884221C5E5C00CC87F8 /* BleClientManager-public.h in Headers */ = {isa = PBXBuildFile; fileRef = FD61D87B221C5E5C00CC87F8 /* BleClientManager-public.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD61D885221C5E5C00CC87F8 /* BleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D87C221C5E5C00CC87F8 /* BleEvent.swift */; };
 		FD61D886221C5E5C00CC87F8 /* BleClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D87D221C5E5C00CC87F8 /* BleClientManager.swift */; };
 		FD61D887221C5E5C00CC87F8 /* BleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61D87E221C5E5C00CC87F8 /* BleError.swift */; };
 		FD61D889221C5EC000CC87F8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61D888221C5EC000CC87F8 /* RxSwift.framework */; };
 		FD61D88A221C5EC000CC87F8 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */; };
+		FD61D973221C729E00CC87F8 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61D972221C729E00CC87F8 /* RxAtomic.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FD61D88B221C5F1E00CC87F8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D73F07A11D49033A00AD5963 /* BleClientManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BleClientManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,11 +27,12 @@
 		FD61D878221C5E5C00CC87F8 /* SafePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafePromise.swift; sourceTree = "<group>"; };
 		FD61D879221C5E5C00CC87F8 /* BleUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleUtils.swift; path = Sources/BleClientManager/BleUtils.swift; sourceTree = "<group>"; };
 		FD61D87A221C5E5C00CC87F8 /* BleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleExtensions.swift; path = Sources/BleClientManager/BleExtensions.swift; sourceTree = "<group>"; };
-		FD61D87B221C5E5C00CC87F8 /* BleClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BleClientManager.h; path = Sources/BleClientManager/BleClientManager.h; sourceTree = "<group>"; };
+		FD61D87B221C5E5C00CC87F8 /* BleClientManager-public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BleClientManager-public.h"; path = "Sources/BleClientManager/BleClientManager-public.h"; sourceTree = "<group>"; };
 		FD61D87C221C5E5C00CC87F8 /* BleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleEvent.swift; path = Sources/BleClientManager/BleEvent.swift; sourceTree = "<group>"; };
 		FD61D87D221C5E5C00CC87F8 /* BleClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleClientManager.swift; path = Sources/BleClientManager/BleClientManager.swift; sourceTree = "<group>"; };
 		FD61D87E221C5E5C00CC87F8 /* BleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BleError.swift; path = Sources/BleClientManager/BleError.swift; sourceTree = "<group>"; };
 		FD61D888221C5EC000CC87F8 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD61D972221C729E00CC87F8 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7421F899FE00D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7621F89A1500D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBluetoothKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +45,7 @@
 			files = (
 				FD61D88A221C5EC000CC87F8 /* RxBluetoothKit.framework in Frameworks */,
 				FD61D889221C5EC000CC87F8 /* RxSwift.framework in Frameworks */,
+				FD61D973221C729E00CC87F8 /* RxAtomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +55,7 @@
 		D73F07971D49033A00AD5963 = {
 			isa = PBXGroup;
 			children = (
-				FD61D87B221C5E5C00CC87F8 /* BleClientManager.h */,
+				FD61D87B221C5E5C00CC87F8 /* BleClientManager-public.h */,
 				FD61D87E221C5E5C00CC87F8 /* BleError.swift */,
 				FD61D87C221C5E5C00CC87F8 /* BleEvent.swift */,
 				FD61D87A221C5E5C00CC87F8 /* BleExtensions.swift */,
@@ -100,6 +91,7 @@
 			children = (
 				FD61D888221C5EC000CC87F8 /* RxSwift.framework */,
 				FD63BF7621F89A1500D09100 /* RxSwift.framework */,
+				FD61D972221C729E00CC87F8 /* RxAtomic.framework */,
 				FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */,
 				FD63BF7421F899FE00D09100 /* RxSwift.framework */,
 			);
@@ -113,7 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD61D884221C5E5C00CC87F8 /* BleClientManager.h in Headers */,
+				FD61D884221C5E5C00CC87F8 /* BleClientManager-public.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,11 +116,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D73F07A91D49033A00AD5963 /* Build configuration list for PBXNativeTarget "BleClientManager" */;
 			buildPhases = (
+				D73F079E1D49033A00AD5963 /* Headers */,
 				D73F079C1D49033A00AD5963 /* Sources */,
 				D73F079D1D49033A00AD5963 /* Frameworks */,
-				D73F079E1D49033A00AD5963 /* Headers */,
 				D73F079F1D49033A00AD5963 /* Resources */,
-				FD61D88B221C5F1E00CC87F8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -249,7 +240,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,6 +251,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -307,13 +302,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -337,7 +336,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -356,9 +354,88 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.polidea.BleClientManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
+		};
+		FD61D906221C707E00CC87F8 /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SUPPRESS_WARNINGS = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = TestRelease;
+		};
+		FD61D907221C707E00CC87F8 /* TestRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/BleClientManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.polidea.BleClientManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = TestRelease;
 		};
 		FD84BA742209CDFC000B86BC /* Local */ = {
 			isa = XCBuildConfiguration;
@@ -410,7 +487,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,6 +498,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -440,7 +521,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Local;
 		};
@@ -453,6 +533,7 @@
 				D73F07A71D49033A00AD5963 /* Debug */,
 				FD84BA742209CDFC000B86BC /* Local */,
 				D73F07A81D49033A00AD5963 /* Release */,
+				FD61D906221C707E00CC87F8 /* TestRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -463,6 +544,7 @@
 				D73F07AA1D49033A00AD5963 /* Debug */,
 				FD84BA752209CDFC000B86BC /* Local */,
 				D73F07AB1D49033A00AD5963 /* Release */,
+				FD61D907221C707E00CC87F8 /* TestRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

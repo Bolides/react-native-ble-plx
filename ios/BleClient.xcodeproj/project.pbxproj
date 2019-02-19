@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD63BF9321F89C9700D09100 /* BleClientManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF9221F89C9700D09100 /* BleClientManager.framework */; };
+		FD61D905221C6FEA00CC87F8 /* BleClientManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61D8E3221C6BDD00CC87F8 /* BleClientManager.framework */; };
 		FD63BFEC21F8A76200D09100 /* BleClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFE321F8A76200D09100 /* BleClientSwift.framework */; };
 		FD63BFFA21F8A79500D09100 /* libBleClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F06E81D48E17B00AD5963 /* libBleClient.a */; };
 		FD63C00021F8A8F000D09100 /* BleClientManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BFFF21F8A8F000D09100 /* BleClientManager.framework */; };
@@ -52,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		D73F06E81D48E17B00AD5963 /* libBleClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBleClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD61D8A4221C674300CC87F8 /* BleClientManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleClientManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD61D8E3221C6BDD00CC87F8 /* BleClientManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleClientManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD61D8FA221C6D4B00CC87F8 /* BleClientManager_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleClientManager_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF9221F89C9700D09100 /* BleClientManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleClientManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BFE321F8A76200D09100 /* BleClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BleClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BFEB21F8A76200D09100 /* BleClientSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleClientSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD63BF9321F89C9700D09100 /* BleClientManager.framework in Frameworks */,
+				FD61D905221C6FEA00CC87F8 /* BleClientManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +122,10 @@
 		FD63BF9121F89C9700D09100 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD61D8FA221C6D4B00CC87F8 /* BleClientManager_iOS.framework */,
+				FD61D8E3221C6BDD00CC87F8 /* BleClientManager.framework */,
 				FD739F5621FB38FB00022D85 /* libReact.a */,
+				FD61D8A4221C674300CC87F8 /* BleClientManager.framework */,
 				FD63BFFF21F8A8F000D09100 /* BleClientManager.framework */,
 				FD63BF9221F89C9700D09100 /* BleClientManager.framework */,
 			);
@@ -191,8 +197,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D73F06F11D48E17B00AD5963 /* Build configuration list for PBXNativeTarget "BleClient" */;
 			buildPhases = (
-				D73F06E41D48E17B00AD5963 /* Sources */,
 				D73F06E51D48E17B00AD5963 /* Frameworks */,
+				D73F06E41D48E17B00AD5963 /* Sources */,
 				D73F06E61D48E17B00AD5963 /* Copy Headers to include in build directory */,
 			);
 			buildRules = (
@@ -391,7 +397,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/inlcude/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -449,7 +455,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/inlcude/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -467,6 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BleClientManager.framework/Headers",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -477,6 +487,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BleClientManager.framework/Headers",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -686,7 +700,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/inlcude/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -703,6 +717,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BleClientManager.framework/Headers",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -832,7 +850,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/inlcude/**",
-					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -850,6 +868,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BleClientManager.framework/Headers",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

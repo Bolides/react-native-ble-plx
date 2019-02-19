@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D73F07A01D49033A00AD5963"
-               BuildableName = "BleClientManager.framework"
-               BlueprintName = "BleClientManager"
+               BlueprintIdentifier = "FD61D8E9221C6CDE00CC87F8"
+               BuildableName = "BleClientManager_iOS.framework"
+               BlueprintName = "BleClientManager-iOS"
                ReferencedContainer = "container:BleClientManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "TestRelease"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D73F07A01D49033A00AD5963"
-            BuildableName = "BleClientManager.framework"
-            BlueprintName = "BleClientManager"
+            BlueprintIdentifier = "FD61D8E9221C6CDE00CC87F8"
+            BuildableName = "BleClientManager_iOS.framework"
+            BlueprintName = "BleClientManager-iOS"
             ReferencedContainer = "container:BleClientManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D73F07A01D49033A00AD5963"
-            BuildableName = "BleClientManager.framework"
-            BlueprintName = "BleClientManager"
+            BlueprintIdentifier = "FD61D8E9221C6CDE00CC87F8"
+            BuildableName = "BleClientManager_iOS.framework"
+            BlueprintName = "BleClientManager-iOS"
             ReferencedContainer = "container:BleClientManager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
