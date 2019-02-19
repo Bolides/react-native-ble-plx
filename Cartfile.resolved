@@ -1,1 +1,4 @@
+github "Bolides/RxBluetoothKit" "4.0.8"
+github "Bolides/RxSwift" "4.5.3"
+github "doozMen/RxSwift" "4.5.4"
 github "expo/react-native" "sdk-31-with-hooks-experimental"

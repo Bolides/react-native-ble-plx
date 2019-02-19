@@ -1,5 +1,5 @@
 //
-//  BleModule.swift
+//  BleClientManager.swift
 //
 //  Created by Konrad Rodzik on 7/4/16.
 //

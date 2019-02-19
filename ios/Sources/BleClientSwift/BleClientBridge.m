@@ -12,7 +12,7 @@
 @interface BleClientBridge ()
 
     // TODO: use proxy object to transfer request from swift too.
-@property (nonatomic, strong) BleModule * module;
+@property (nonatomic, strong) BleClient * module;
 
 @end
 
