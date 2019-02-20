@@ -357,7 +357,7 @@
 			};
 			name = Release;
 		};
-		FD61D906221C707E00CC87F8 /* TestRelease */ = {
+		FD61D906221C707E00CC87F8 /* BetaRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,9 +417,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = TestRelease;
+			name = BetaRelease;
 		};
-		FD61D907221C707E00CC87F8 /* TestRelease */ = {
+		FD61D907221C707E00CC87F8 /* BetaRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -435,7 +435,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = TestRelease;
+			name = BetaRelease;
 		};
 		FD84BA742209CDFC000B86BC /* Local */ = {
 			isa = XCBuildConfiguration;
@@ -533,7 +533,7 @@
 				D73F07A71D49033A00AD5963 /* Debug */,
 				FD84BA742209CDFC000B86BC /* Local */,
 				D73F07A81D49033A00AD5963 /* Release */,
-				FD61D906221C707E00CC87F8 /* TestRelease */,
+				FD61D906221C707E00CC87F8 /* BetaRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -544,7 +544,7 @@
 				D73F07AA1D49033A00AD5963 /* Debug */,
 				FD84BA752209CDFC000B86BC /* Local */,
 				D73F07AB1D49033A00AD5963 /* Release */,
-				FD61D907221C707E00CC87F8 /* TestRelease */,
+				FD61D907221C707E00CC87F8 /* BetaRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
