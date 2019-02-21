@@ -2,13 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Carthage/Checkouts/react-native/React/React.xcodeproj">
+      location = "group:Sources/BleClientManager/BleClientManager.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BleClient.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BleClientManager.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../Carthage/Checkouts/RxSwift/Rx.xcodeproj">
