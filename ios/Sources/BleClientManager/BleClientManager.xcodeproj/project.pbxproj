@@ -16,6 +16,7 @@
 		D7D202841D4F617C00E10F6A /* BleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D2027E1D4F617C00E10F6A /* BleError.swift */; };
 		FD63BF7721F89A1500D09100 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF7621F89A1500D09100 /* RxSwift.framework */; };
 		FD63BF7921F89A2D00D09100 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */; };
+		FD838C5B221EF2D6004B39E6 /* BleClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD838C5A221EF2D5004B39E6 /* BleClientManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FD63BF7421F899FE00D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7621F89A1500D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBluetoothKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD838C5A221EF2D5004B39E6 /* BleClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleClientManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D7D2027B1D4F617C00E10F6A /* BleEvent.swift */,
 				D77BF8451D54B46D00CDEA1D /* BleExtensions.swift */,
 				D7D2027C1D4F617C00E10F6A /* BleUtils.swift */,
+				FD838C5A221EF2D5004B39E6 /* BleClientManager.swift */,
 				D7D2027D1D4F617C00E10F6A /* BleClientManager.h */,
 				D7D2027E1D4F617C00E10F6A /* BleError.swift */,
 				D7D2027F1D4F617C00E10F6A /* Info.plist */,
@@ -170,6 +173,7 @@
 				D77BF8461D54B46D00CDEA1D /* BleExtensions.swift in Sources */,
 				D735382B1DBF96800052F6B5 /* DisposableMap.swift in Sources */,
 				D735382D1DBF96BD0052F6B5 /* SafePromise.swift in Sources */,
+				FD838C5B221EF2D6004B39E6 /* BleClientManager.swift in Sources */,
 				D7D202811D4F617C00E10F6A /* BleEvent.swift in Sources */,
 				D7D202821D4F617C00E10F6A /* BleUtils.swift in Sources */,
 				D7D202841D4F617C00E10F6A /* BleError.swift in Sources */,
