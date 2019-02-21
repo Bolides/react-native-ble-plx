@@ -1,9 +1,0 @@
-[submodule "Carthage/Checkouts/RxBluetoothKit"]
-	path = Carthage/Checkouts/RxBluetoothKit
-	url = ssh://git@github.com/Bolides/RxBluetoothKit.git
-[submodule "Carthage/Checkouts/RxSwift"]
-	path = Carthage/Checkouts/RxSwift
-	url = ssh://git@github.com/Bolides/RxSwift.git
-[submodule "Carthage/Checkouts/react-native"]
-	path = Carthage/Checkouts/react-native
-	url = ssh://git@github.com/expo/react-native.git
