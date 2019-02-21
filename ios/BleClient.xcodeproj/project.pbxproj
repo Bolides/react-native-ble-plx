@@ -34,13 +34,6 @@
 			remoteGlobalIDString = D73F06E71D48E17B00AD5963;
 			remoteInfo = BleClient;
 		};
-		FD63CAF621F8B17900D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF221F8B17800D09100 /* BleClientManager.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D73F07A11D49033A00AD5963;
-			remoteInfo = BleClientManager;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +63,6 @@
 		FD63CA3021F8AD0700D09100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD63CAA821F8AD0800D09100 /* BleClientSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleClientSwiftTests.swift; sourceTree = "<group>"; };
 		FD63CAA921F8AD0800D09100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD63CAF221F8B17800D09100 /* BleClientManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BleClientManager.xcodeproj; path = Sources/BleClientManager/BleClientManager.xcodeproj; sourceTree = "<group>"; };
 		FD739F5621FB38FB00022D85 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +98,6 @@
 		D73F06DF1D48E17B00AD5963 = {
 			isa = PBXGroup;
 			children = (
-				FD63CAF221F8B17800D09100 /* BleClientManager.xcodeproj */,
 				FD63C00A21F8AD0100D09100 /* Sources */,
 				FD63CAA321F8AD0800D09100 /* Tests */,
 				D73F06E91D48E17B00AD5963 /* Products */,
@@ -178,14 +169,6 @@
 				FD63CAA921F8AD0800D09100 /* Info.plist */,
 			);
 			path = BleClientSwiftTests;
-			sourceTree = "<group>";
-		};
-		FD63CAF321F8B17800D09100 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD63CAF721F8B17900D09100 /* BleClientManager.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +272,6 @@
 			mainGroup = D73F06DF1D48E17B00AD5963;
 			productRefGroup = D73F06E91D48E17B00AD5963 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FD63CAF321F8B17800D09100 /* Products */;
-					ProjectRef = FD63CAF221F8B17800D09100 /* BleClientManager.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D73F06E71D48E17B00AD5963 /* BleClient */,
@@ -303,16 +280,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FD63CAF721F8B17900D09100 /* BleClientManager.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = BleClientManager.framework;
-			remoteRef = FD63CAF621F8B17900D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FD63BFE121F8A76200D09100 /* Resources */ = {

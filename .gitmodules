@@ -1,6 +1,9 @@
 [submodule "Carthage/Checkouts/RxBluetoothKit"]
-	path = ios/Sources/BleClientManager/Carthage/Checkouts/RxBluetoothKit
-	url = https://github.com/doozMen/RxBluetoothKit.git
+	path = Carthage/Checkouts/RxBluetoothKit
+	url = ssh://git@github.com/Bolides/RxBluetoothKit.git
 [submodule "Carthage/Checkouts/RxSwift"]
-	path = ios/Sources/BleClientManager/Carthage/Checkouts/RxSwift
-	url = https://doozMen@github.com/doozMen/RxSwift.git
+	path = Carthage/Checkouts/RxSwift
+	url = ssh://git@github.com/Bolides/RxSwift.git
+[submodule "Carthage/Checkouts/react-native"]
+	path = Carthage/Checkouts/react-native
+	url = ssh://git@github.com/expo/react-native.git

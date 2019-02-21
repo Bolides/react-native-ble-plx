@@ -19,121 +19,6 @@
 		FD63BF7921F89A2D00D09100 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FD63CAFF21F8B1B000D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2666FD841CCE457C005E81CE;
-			remoteInfo = "RxBluetoothKit iOS";
-		};
-		FD63CB0121F8B1B000D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2666FD8D1CCE457C005E81CE;
-			remoteInfo = "RxBluetoothKit iOSTests";
-		};
-		FD63CB0321F8B1B000D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2666FDA31CCE4626005E81CE;
-			remoteInfo = "RxBluetoothKit macOS";
-		};
-		FD63CB0521F8B1B000D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2666FDAC1CCE4626005E81CE;
-			remoteInfo = "RxBluetoothKit macOSTests";
-		};
-		FD63CB0721F8B1D200D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2666FD831CCE457C005E81CE;
-			remoteInfo = "RxBluetoothKit iOS";
-		};
-		FD63CB1621F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8165ABC21891AFF00494BEF;
-			remoteInfo = RxAtomic;
-		};
-		FD63CB1821F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8A56AD71AD7424700B4673B;
-			remoteInfo = RxSwift;
-		};
-		FD63CB1A21F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C809396D1B8A71760088E94D;
-			remoteInfo = RxCocoa;
-		};
-		FD63CB1C21F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8093BC71B8A71F00088E94D;
-			remoteInfo = RxBlocking;
-		};
-		FD63CB1E21F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C88FA50C1C25C44800CCFEA4;
-			remoteInfo = RxTest;
-		};
-		FD63CB2021F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83508C31C386F6F0027C24C;
-			remoteInfo = "AllTests-iOS";
-		};
-		FD63CB2221F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83509841C38740E0027C24C;
-			remoteInfo = "AllTests-tvOS";
-		};
-		FD63CB2421F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83509941C38742C0027C24C;
-			remoteInfo = "AllTests-macOS";
-		};
-		FD63CB2621F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C85BA04B1C3878740075D68E;
-			remoteInfo = Microoptimizations;
-		};
-		FD63CB2821F8B1EE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
-			remoteInfo = Benchmarks;
-		};
-		FD63CB2A21F8B1FE00D09100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
-			remoteInfo = RxSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D735382A1DBF96800052F6B5 /* DisposableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposableMap.swift; sourceTree = "<group>"; };
 		D735382C1DBF96BD0052F6B5 /* SafePromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafePromise.swift; sourceTree = "<group>"; };
@@ -148,8 +33,6 @@
 		FD63BF7421F899FE00D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7621F89A1500D09100 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD63BF7821F89A2D00D09100 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBluetoothKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RxBluetoothKit.xcodeproj; path = Carthage/Checkouts/RxBluetoothKit/RxBluetoothKit.xcodeproj; sourceTree = "<group>"; };
-		FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = Carthage/Checkouts/RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +60,6 @@
 		D73F07971D49033A00AD5963 = {
 			isa = PBXGroup;
 			children = (
-				FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */,
-				FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */,
 				D7D2027A1D4F617C00E10F6A /* BleModule.swift */,
 				D7D2027B1D4F617C00E10F6A /* BleEvent.swift */,
 				D77BF8451D54B46D00CDEA1D /* BleExtensions.swift */,
@@ -210,34 +91,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD63CAF921F8B1AC00D09100 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD63CB0021F8B1B000D09100 /* RxBluetoothKit.framework */,
-				FD63CB0221F8B1B000D09100 /* RxBluetoothKit iOSTests.xctest */,
-				FD63CB0421F8B1B000D09100 /* RxBluetoothKit.framework */,
-				FD63CB0621F8B1B000D09100 /* RxBluetoothKit macOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FD63CB0A21F8B1EE00D09100 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD63CB1721F8B1EE00D09100 /* RxAtomic.framework */,
-				FD63CB1921F8B1EE00D09100 /* RxSwift.framework */,
-				FD63CB1B21F8B1EE00D09100 /* RxCocoa.framework */,
-				FD63CB1D21F8B1EE00D09100 /* RxBlocking.framework */,
-				FD63CB1F21F8B1EE00D09100 /* RxTest.framework */,
-				FD63CB2121F8B1EE00D09100 /* AllTests-iOS.xctest */,
-				FD63CB2321F8B1EE00D09100 /* AllTests-tvOS.xctest */,
-				FD63CB2521F8B1EE00D09100 /* AllTests-macOS.xctest */,
-				FD63CB2721F8B1EE00D09100 /* PerformanceTests.app */,
-				FD63CB2921F8B1EE00D09100 /* Benchmarks.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -264,8 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FD63CB2B21F8B1FE00D09100 /* PBXTargetDependency */,
-				FD63CB0821F8B1D200D09100 /* PBXTargetDependency */,
 			);
 			name = BleClientManager;
 			productName = BleClientManager;
@@ -297,124 +148,12 @@
 			mainGroup = D73F07971D49033A00AD5963;
 			productRefGroup = D73F07A21D49033A00AD5963 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FD63CB0A21F8B1EE00D09100 /* Products */;
-					ProjectRef = FD63CB0921F8B1EE00D09100 /* Rx.xcodeproj */;
-				},
-				{
-					ProductGroup = FD63CAF921F8B1AC00D09100 /* Products */;
-					ProjectRef = FD63CAF821F8B1AC00D09100 /* RxBluetoothKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D73F07A01D49033A00AD5963 /* BleClientManager */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FD63CB0021F8B1B000D09100 /* RxBluetoothKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBluetoothKit.framework;
-			remoteRef = FD63CAFF21F8B1B000D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB0221F8B1B000D09100 /* RxBluetoothKit iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RxBluetoothKit iOSTests.xctest";
-			remoteRef = FD63CB0121F8B1B000D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB0421F8B1B000D09100 /* RxBluetoothKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBluetoothKit.framework;
-			remoteRef = FD63CB0321F8B1B000D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB0621F8B1B000D09100 /* RxBluetoothKit macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RxBluetoothKit macOSTests.xctest";
-			remoteRef = FD63CB0521F8B1B000D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB1721F8B1EE00D09100 /* RxAtomic.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxAtomic.framework;
-			remoteRef = FD63CB1621F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB1921F8B1EE00D09100 /* RxSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxSwift.framework;
-			remoteRef = FD63CB1821F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB1B21F8B1EE00D09100 /* RxCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxCocoa.framework;
-			remoteRef = FD63CB1A21F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB1D21F8B1EE00D09100 /* RxBlocking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBlocking.framework;
-			remoteRef = FD63CB1C21F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB1F21F8B1EE00D09100 /* RxTest.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxTest.framework;
-			remoteRef = FD63CB1E21F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB2121F8B1EE00D09100 /* AllTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-iOS.xctest";
-			remoteRef = FD63CB2021F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB2321F8B1EE00D09100 /* AllTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-tvOS.xctest";
-			remoteRef = FD63CB2221F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB2521F8B1EE00D09100 /* AllTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-macOS.xctest";
-			remoteRef = FD63CB2421F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB2721F8B1EE00D09100 /* PerformanceTests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			name = PerformanceTests.app;
-			path = Microoptimizations.app;
-			remoteRef = FD63CB2621F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FD63CB2921F8B1EE00D09100 /* Benchmarks.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Benchmarks.xctest;
-			remoteRef = FD63CB2821F8B1EE00D09100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D73F079F1D49033A00AD5963 /* Resources */ = {
@@ -442,19 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FD63CB0821F8B1D200D09100 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RxBluetoothKit iOS";
-			targetProxy = FD63CB0721F8B1D200D09100 /* PBXContainerItemProxy */;
-		};
-		FD63CB2B21F8B1FE00D09100 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxSwift;
-			targetProxy = FD63CB2A21F8B1FE00D09100 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D73F07A71D49033A00AD5963 /* Debug */ = {

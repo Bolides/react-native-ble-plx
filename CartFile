@@ -1,2 +1,2 @@
-github "Bolides/RxSwift"
-github "Bolides/RxBluetoothKit"
+github "Bolides/RxBluetoothKit" ~> 4.0.7
+github "Bolides/RxSwift" ~> 4.5.3
